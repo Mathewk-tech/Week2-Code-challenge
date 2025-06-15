@@ -114,6 +114,10 @@ function updateGuestList() {
 
   // Update the counter
   guestCountDisplay.textContent = `${guests.length}/10 guests`;
+  if(guests.length>10){
+    alert("you have exceeded the limit");
+    return;
+  }
 
   // Show or hide the empty state message
   if (guests.length === 0) {
