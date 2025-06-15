@@ -1,0 +1,380 @@
+* {
+margin: 0;
+box-sizing: border-box;
+padding: 0;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0,auto;
+    padding: 20px;    
+}
+header{
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p{
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+.form-container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+input-zone {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#guest-name {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#guest-name:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+#category {
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.guest-count {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #666;
+}
+
+.guest-list-section {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.list-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.list-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.summary {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.attending {
+  background-color: green;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.not-attending {
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.guest-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.guest-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+.guest-item:hover {
+  background-color: #f8fafc;
+}
+
+.guest-item:last-child {
+  border-bottom: none;
+}
+
+.guest-info {
+  flex: 1;
+}
+
+.guest-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.category-icon {
+  font-size: 1.2em;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.rsvp-status {
+  font-size: 16px;
+}
+
+.guest-meta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category-tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.category-tag.friend {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.category-tag.family {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.category-tag.colleague {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.added-time {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.guest-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.guest-actions button {
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-edit:hover {
+  background-color: #fef3c7;
+}
+
+.btn-rsvp:hover {
+  background-color: #e0f2fe;
+}
+
+.btn-remove:hover {
+  background-color: #fee2e2;
+}
+
+.guest-edit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.guest-edit input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 2px solid #667eea;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-save, .btn-cancel {
+  background: none;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-save:hover {
+  background-color: #dcfce7;
+}
+
+.btn-cancel:hover {
+  background-color: #fee2e2;
+}
+
+.empty-state {
+  padding: 40px 25px;
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  max-width: 300px;
+}
+
+.alert.show {
+  transform: translateX(0);
+}
+
+.alert-success {
+  background-color: #10b981;
+  color: white;
+}
+
+.alert-error {
+  background-color: #ef4444;
+  color: white;
+}
+
+.alert-info {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.guest-item.attending {
+  border-left: 4px solid #10b981;
+}
+
+.guest-item.not-attending {
+  border-left: 4px solid #ef4444;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .input-group > * {
+    min-width: unset;
+  }
+  
+  .list-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .guest-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .guest-actions {
+    align-self: flex-end;
+  }
+  
+  .guest-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .input-zone {
+    flex-direction: column;
+  }
+}

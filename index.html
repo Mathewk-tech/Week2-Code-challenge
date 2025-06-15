@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="conatiner">
+<div class="container">
 <header>
-    <h1>Event Guest List Manager</h1>
+   <h1>Event Guest List Manager</h1>
     <p>Guest list wizard🤖</p>
 </header>
 <main>
-    <div class="form-conatiner">
-        <form id="guest-form">
+    <div class="form-container">
+        <form id="Guest-form">
             <div class="input-zone">
                 <input 
                 type="text"
@@ -23,35 +23,34 @@
                 required
                 maxlength="50"
                 >
-                <select id="category">
+                <select  id="category">
                     <option value="friend">🫡 friend</option>
                     <option value="Family">👨‍👩‍👦‍👦 Family</option>
                     <option value="colleague">🤓 colleague</option>
                 </select>
-                <button type="submit">Add a guest</button>
+                <button type="submit">Add Guest</button>
             </div>
         </form>
-        <div class="count">
-            <span id="display">0/10 guests</span>
-        </div>
+<div class="count">
+        <span id="display">0/10 guests</span>
+</div>  
     </div>
 <div class="guest-list-section">
-    <div class="list-header">
-        <h2>Guest lists</h2>
-        <div class="summary">
-            <span class="attending">attending: <span id="attending-count">0</span></span>
-            <span class="not-attending">not attending: <span id="not-attending-count">0</span></span>
-        </div>
-    </div>
-    <ul id="guest-list" class="guest-list"></ul>
-    <div id="empty-state" class="empty-state">
-<p>No guests added yet. Start building your guest list!</p>
-    </div>    
-</div>
+          <div class="list-header">
+            <h2>Guest List</h2>
+            <div class="summary">
+              <span class="attending">Attending: <span id="attending-count">0</span></span>
+              <span class="not-attending">Not Attending: <span id="not-attending-count">0</span></span>
+            </div>
+          </div>
+
+          <ul id="guest-list" class="guest-list" ></ul> 
+          <div id="empty-state" class="empty-state">
+            <p>No guests added yet. Start building your guest list!</p>
+          </div>
+        </div>        
 </main>
 </div>
-
-
     <script src="./index.js"></script>
 </body>
 </html>
