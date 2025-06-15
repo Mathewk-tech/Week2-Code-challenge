@@ -1,4 +1,5 @@
 const guests = [];
+const MaxGuest=10;
 
 // Get elements from the HTML
 const form = document.getElementById('Guest-form');
@@ -29,15 +30,24 @@ console.log('date:', n);
 // log the time in the browser console
 console.log('time:',time);
 
-  if (name === '') return; // Don't add if the name is empty
+  if (name === ''){
+    alert("please enter a name");
+    return; 
+  } 
+  const actions={
+    name:name,
+    category:category,
+    attending:true,
+    time:time
+  }
 
   // Add guest to the list
-  guests.push({ name: name, category: category,attending:true,time: time});
+  guests.push(actions);
 
   // Show the updated guest list
   updateGuestList();
   calculateAttendes();
-console.log(guests);
+
   // Clear the input field
   nameInput.value = '';
 });
@@ -114,7 +124,7 @@ function updateGuestList() {
 
   // Update the counter
   guestCountDisplay.textContent = `${guests.length}/10 guests`;
-  if(guests.length>10){
+  if(guests.length>MaxGuest){
     alert("you have exceeded the limit");
     return;
   }
