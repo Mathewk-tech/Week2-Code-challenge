@@ -31,7 +31,7 @@ console.log('date:', n);
 console.log('time:',time);
 
   if (name === ''){
-    alert("please enter a name");
+    
     return; 
   } 
   const actions={
