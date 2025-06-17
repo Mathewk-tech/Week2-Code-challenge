@@ -8,13 +8,15 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
-  color: #333;
+  color: #333;  
 }
 
 .container{
     max-width: 800px;
     margin: 0,auto;
     padding: 20px; 
+    position: relative;
+    
     
 }
 header{
@@ -38,6 +40,7 @@ header p{
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   margin-bottom: 30px;
+  justify-content: center;
 }
 input-zone {
   display: flex;
