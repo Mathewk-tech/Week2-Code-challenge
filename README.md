@@ -15,6 +15,7 @@ The required tools are:
 - livesever extension
 
 how to run:
+
 - clone the project using
 ```
 https://github.com/Mathewk-tech/Week2-Code-challenge.git
