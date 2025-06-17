@@ -14,7 +14,7 @@ The required tools are:
 - node version 18
 - livesever extension
 
-how to run:
+### How to run:
 
 - clone the project using
 ```
