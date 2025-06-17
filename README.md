@@ -1,4 +1,4 @@
-### Code challenge
+## Code challenge
 This is a codechallenge submission for phase-1 javascript module. The project is about creating a simple event guest list manager,which allows the user to do the following.
 
 - To enter the guests name.
@@ -7,7 +7,7 @@ This is a codechallenge submission for phase-1 javascript module. The project is
 
 - To click a delete button to remove a guest from the guest list.
 
-## Project setup
+### Project setup
 The required tools are:
 
 - visual studio code
